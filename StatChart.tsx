@@ -6,7 +6,7 @@ import {
   PSA_ATTAINMENT_DATA, 
   PSA_GRADUATES_BY_DISCIPLINE, 
   PSA_ECONOMIC_PARTICIPATION 
-} from '../constants';
+} from './constants';
 
 const StatChart: React.FC = () => {
   const [activeSet, setActiveSet] = useState<'education' | 'attainment' | 'graduates' | 'economic'>('education');

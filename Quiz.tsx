@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
-import { QUIZ_QUESTIONS } from '../constants';
-import { QuizQuestion } from '../types';
+import { QUIZ_QUESTIONS } from './constants';
+import { QuizQuestion } from './types';
 
 interface AnswerHistory {
   question: QuizQuestion;

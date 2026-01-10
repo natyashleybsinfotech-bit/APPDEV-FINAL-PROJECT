@@ -1,7 +1,7 @@
 
 import React, { useState, useMemo } from 'react';
-import { MODULE_ITEMS } from '../constants';
-import { ModuleItem } from '../types';
+import { MODULE_ITEMS } from './constants';
+import { ModuleItem } from './types';
 
 const Modules: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'All' | 'Law' | 'Article' | 'Study'>('All');

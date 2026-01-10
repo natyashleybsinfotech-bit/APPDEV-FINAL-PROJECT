@@ -1,11 +1,20 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import { View } from './types';
-import Modules from './components/Modules';
-import ChatInterface from './components/ChatInterface';
-import Quiz from './components/Quiz';
-import Feedback from './components/Feedback';
-import StatChart from './components/StatChart';
+import Modules from "./Modules";
+import ChatInterface from "./ChatInterface";
+import Quiz from "./Quiz";
+import Feedback from "./Feedback";
+import StatChart from "./StatChart";
+
+declare global {
+  interface Window {
+    aistudio?: {
+      hasSelectedApiKey: () => Promise<boolean>;
+      openSelectKey: () => Promise<void>;
+    };
+  }
+}
 
 const App: React.FC = () => {
   const [currentView, setCurrentView] = useState<View>(View.HOME);
