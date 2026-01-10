@@ -1,0 +1,7 @@
+{
+  "name": "EDGE-AI (Equality Development & Gender Education – AI Platform)",
+  "description": "An AI-powered web platform dedicated to promoting gender equality awareness among Filipino students, featuring real-time dialogue, localized statistics, and educational resources.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
