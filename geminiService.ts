@@ -18,11 +18,11 @@ Key Guidelines:
 
 export const sendMessageToGemini = async (history: ChatMessage[], message: string): Promise<string> => {
   /**
-   * The API key is obtained exclusively from the environment variable process.env.API_KEY.
+   * The API key is obtained exclusively from the environment variable process.env.GEMINI_API_KEY.
    * We instantiate a new GoogleGenAI instance for every request to ensure we are using 
    * the most up-to-date key from the environment/platform selection.
    */
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
   
   try {
     // Map conversation history to the SDK's internal format
